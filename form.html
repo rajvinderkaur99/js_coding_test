@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="styles/style.css">
+        
+    </head>
+    <body>
+        
+           <form>
+  <div class="container">
+    <h1>Register With Us</h1>
+    
+    <hr>
+    
+        <label for="uname"><b>Username<b></b></label>
+        <input type="text" id="uname" placeholder="Enter your Username" 
+        required minlength="3" maxlength="20">
+        <!-- <p>Username must be at least 3 characters</p> -->
+    
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"type="password" placeholder="Enrer Password again" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <button type="submit" class="submitbtn">Submit</button>
+  </div>
+
+  
+</form>
+<script src="scripts/script.js"></script>
+    </body>
+</html>
