@@ -1,24 +1,25 @@
-function checkForm(form)
-  {
-    if(form.username.value == "") {
-      alert("Error:Username must be at least 3 characters");
-      form.username.focus();
-      return false;
-    }
-    if(form.email.value == "") {
-        alert("Error:Email is not valid");
-        form.email.focus();
-        return false;
-      }
+function checkForm() {
+  var x = document.forms["myForm"]["uname"].value;
+  if (x == "") {
+    alert("Username must be at least 3 characters");
+    return false;
+  }
+  var y = document.forms["myForm"]["email"].value;
+  if (y == "") {
+    alert("Email is not valid");
+    return false;
+  }
+  var z = document.forms["myForm"]["psw"].value;
+  if (z == "") {
+    alert("Password must be at least 6 character");
+    return false;
+  }
+  var t = document.forms["myForm"]["psw-repeat"].value;
+  if (t == "") {
+    alert("Password2 is required");
+    return false;
+  }
 
-      if(form.password.value == "") {
-        alert("Password must be atleast 6 character");
-        form.password.focus();
-        return false;
-      }
-      if(form.cpassword.value == "") {
-        alert("Password2 is required");
-        form.cpassword.focus();
-        return false;
-      }
-    }
+
+
+}
