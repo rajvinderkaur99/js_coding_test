@@ -7,18 +7,18 @@ function checkForm(form)
     }
     if(form.email.value == "") {
         alert("Error:Email is not valid");
-        form.username.focus();
+        form.email.focus();
         return false;
       }
 
       if(form.password.value == "") {
         alert("Password must be atleast 6 character");
-        form.username.focus();
+        form.password.focus();
         return false;
       }
       if(form.cpassword.value == "") {
         alert("Password2 is required");
-        form.username.focus();
+        form.cpassword.focus();
         return false;
       }
     }
