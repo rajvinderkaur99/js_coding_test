@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Registration</title>
-        <link rel="stylesheet" href="styles/style.css">
-        
-    </head>
-    <body>
-        
-           <form name="myForm"  onsubmit="return checkForm()">
-  <div class="container">
-    <h1>Register With Us</h1>
+
+<head>
+    <title>Register</title>
     
-    <hr>
-    
-        <label for="uname"><b>Username<b></b></label>
-        <input type="text" id="uname" placeholder="Enter your Username" 
-        required minlength="3" maxlength="20">
-        <!-- <p>Username must be at least 3 characters</p> -->
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+<body>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <div class="container mt-5 shadow-lg bg-white rounded " style="width:60%">
+        <h1 class="text-center mb-5">Register With Us</h1>
+        <form class="text-muted" id="form">
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"type="password" placeholder="Enrer Password again" name="psw-repeat" id="psw-repeat" required>
-    <hr>
-    <button type="submit" class="submitbtn">Submit</button>
-  </div>
+            <div class="form-group">
+                <label for="username" >Username</label>
+                <input type="text" id="username" class="form-control" placeholder="Enter username" required>
+                <div class="myclass"></div>
+                
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                <div class="myclass"></div>
 
-  
-</form>
-<script src="scripts/script.js"></script>
-    </body>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                <div class="myclass"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="cnf_password">Confirm Password</label>
+                <input type="password" class="form-control" id="cnf_password" placeholder="Enter password again" required>
+                <div class="myclass"></div>
+            </div>
+
+            <button id="btnSubmit" type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+
+
+    <!-- <script src="validation.js"></script> -->
+</body>
+
 </html>
